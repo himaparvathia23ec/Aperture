@@ -1,0 +1,17 @@
+{
+  "id": "IMD_FLASHFLOOD_2025_12_31",
+  "type": "flash_flood_guidance",
+  "source": "India Meteorological Department",
+  "reported_at": "2025-12-31T18:40:00+05:30",
+  "valid_till": "2025-12-31T23:30:00+05:30",
+  "locations": [
+    "Himachal Pradesh",
+    "Jammu & Kashmir",
+    "Ladakh",
+    "Uttarakhand"
+  ],
+  "urgency": 3,
+  "severity_level": "low",
+  "confidence": "high",
+  "summary": "Moderate rainfall; no flash flood threat identified."
+}

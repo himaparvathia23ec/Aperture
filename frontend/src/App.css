@@ -1,0 +1,187 @@
+:root {
+  /* Color Palette - Professional Operations Console */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F6F7F9;
+  /* Sidebar, backgrounds */
+  --bg-surface: #FFFFFF;
+  /* Cards */
+
+  --text-primary: #1F2937;
+  /* Dark Grey for readability */
+  --text-secondary: #6B7280;
+  /* Muted Grey */
+  --text-on-accent: #FFFFFF;
+
+  /* Accents - Trustworthy & Calm */
+  --accent-color: #0F766E;
+  /* Muted Teal */
+  --accent-hover: #115E59;
+  --accent-subtle: #F0FDFA;
+  /* Very light teal for backgrounds */
+
+  /* Status Colors - Professional Muted */
+  --status-high-bg: #FEF2F2;
+  --status-high-text: #B91C1C;
+  --status-med-bg: #FFFBEB;
+  --status-med-text: #B45309;
+  --status-low-bg: #F0FDF4;
+  --status-low-text: #15803D;
+
+  /* Glassmorphism - Subtle & Structural */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: 1px solid rgba(229, 231, 235, 0.5);
+  --glass-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --header-height: 64px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 0;
+}
+
+/* Utilities */
+.btn {
+  display: inline-flex;
+  alignItems: center;
+  justifyContent: center;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: var(--text-on-accent);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:disabled {
+  background-color: #9CA3AF;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.glass-container {
+  background: var(--bg-surface);
+  border: 1px solid #E5E7EB;
+  /* Subtle static border fallback */
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  /* Optional subtle backdrop filter for overlap contexts */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Cards */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--hover-shadow);
+}
+
+/* Grid Layouts */
+.crisis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Inputs */
+input {
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  color: var(--text-primary);
+  transition: border-color 0.15s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px var(--accent-subtle);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* Confidence Badges */
+.confidence-high {
+  background-color: var(--status-low-bg);
+  color: var(--status-low-text);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.confidence-medium {
+  background-color: var(--status-med-bg);
+  color: var(--status-med-text);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.confidence-low {
+  background-color: var(--status-high-bg);
+  color: var(--status-high-text);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}

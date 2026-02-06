@@ -1,0 +1,18 @@
+{
+    "id": "IMD_SASIA_FLASHFLOOD_2026_01_10",
+    "type": "flash_flood_guidance",
+    "source": "India Meteorological Department",
+    "reported_at": "2026-01-10T06:00:00Z",
+    "valid_till": "2026-01-10T12:00:00Z",
+    "regions_covered": [
+        "Sri Lanka",
+        "Nepal",
+        "Bhutan",
+        "Bangladesh"
+    ],
+    "primary_focus_area": "Sri Lanka",
+    "urgency": 3,
+    "severity_level": "low",
+    "confidence": "high",
+    "summary": "No flash flood threat observed or forecasted."
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "username": "admin",
+        "password": "password123",
+        "role": "Response Coordinator",
+        "full_name": "Adithya Admin"
+    },
+    {
+        "username": "operator",
+        "password": "op1",
+        "role": "Field Operator",
+        "full_name": "Field Ops Team"
+    }
+]
