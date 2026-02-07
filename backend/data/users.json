@@ -6,9 +6,27 @@
         "full_name": "Adithya Admin"
     },
     {
+        "username": "admn",
+        "password": "password123",
+        "role": "Response Coordinator",
+        "full_name": "Emergency Admin"
+    },
+    {
         "username": "operator",
         "password": "op1",
         "role": "Field Operator",
         "full_name": "Field Ops Team"
+    },
+    {
+        "username": "crisis_manager",
+        "password": "securepassword789",
+        "role": "Crisis Manager",
+        "full_name": "Strategic Lead"
+    },
+    {
+        "username": "a",
+        "password": "1",
+        "role": "Response Coordinator",
+        "full_name": "Short Access"
     }
 ]

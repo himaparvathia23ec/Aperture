@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { AuthProvider, useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import ActiveCrisesPage from './pages/ActiveCrisesPage';
+import ResourcesPage from './pages/ResourcesPage';
 import CrisisDetail from './pages/CrisisDetail';
 import Account from './pages/Account';
 import Layout from './components/Layout';
@@ -36,13 +38,13 @@ function App() {
 
           <Route path="/active-crises" element={
             <ProtectedRoute>
-              <Dashboard />
+              <ActiveCrisesPage />
             </ProtectedRoute>
           } />
 
           <Route path="/resources" element={
             <ProtectedRoute>
-              <div style={{ padding: '20px' }}><h1>Resource View Placeholder</h1></div>
+              <ResourcesPage />
             </ProtectedRoute>
           } />
 

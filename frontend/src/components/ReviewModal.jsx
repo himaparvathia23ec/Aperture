@@ -69,7 +69,7 @@ const ReviewModal = ({ crisis, recommendation, onConfirm, onCancel }) => {
                         />
                     </div>
 
-                    <div style={{ fontSize: '0.75rem', color: '#6B7280', background: '#FEF2F2', padding: '12px', borderRadius: '6px', color: '#991B1B', border: '1px solid #FECACA' }}>
+                    <div style={{ fontSize: '0.75rem', color: '#991B1B', background: '#FEF2F2', padding: '12px', borderRadius: '6px', border: '1px solid #FECACA' }}>
                         This action will log an entry in the audit trail. Immediate mobilization commands may be sent to the field.
                     </div>
                 </div>
